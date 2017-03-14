@@ -135,7 +135,7 @@ namespace Figury
 
         private void InformationButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(TrojkatPageInfo));
         }
     }
 }

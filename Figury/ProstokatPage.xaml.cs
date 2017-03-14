@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Phone.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -45,6 +46,48 @@ namespace Figury
             {
                 Frame.GoBack();
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            CountFieldAndCircuit();
+        }
+
+        private async void CountFieldAndCircuit()
+        {
+            if (IsProperValuesForCount())
+            {
+                double bok1 = Double.Parse(Bok1.Text);
+                double bok2 = Double.Parse(Bok2.Text);
+                double field = bok1 * bok2;
+                double circuit = 2 * bok1 + 2 * bok2;
+
+                PoleResult.Text = String.Format("{0:N2}", field);
+                ObwodResult.Text = String.Format("{0:N2}", circuit);
+
+            }
+            else
+            {
+                MessageDialog mg = new MessageDialog("Niepoprawne wartości do obliczeń.");
+                await mg.ShowAsync();
+            }
+        }
+
+
+        private bool IsProperValuesForCount()
+        {
+            bool condition = true;
+
+            if (String.IsNullOrEmpty(Bok1.Text) || Bok1.Text.Contains("-"))
+            {
+                condition = false;
+            }
+            else if (String.IsNullOrEmpty(Bok2.Text) || Bok2.Text.Contains("-"))
+            {
+                condition = false;
+            }
+
+            return condition;
         }
     }
 }

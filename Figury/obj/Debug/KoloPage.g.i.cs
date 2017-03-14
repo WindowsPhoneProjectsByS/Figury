@@ -15,6 +15,20 @@ namespace Figury
     partial class KoloPage : global::Windows.UI.Xaml.Controls.Page
     {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.Grid MainGrid; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.Grid InputSection; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.TextBox Radius; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.TextBlock ObwodResult; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.TextBlock PoleResult; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.Button FieldButton; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.Button AreaButton; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private bool _contentLoaded;
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
@@ -27,6 +41,13 @@ namespace Figury
             _contentLoaded = true;
             global::Windows.UI.Xaml.Application.LoadComponent(this, new global::System.Uri("ms-appx:///KoloPage.xaml"), global::Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation.Application);
  
+            MainGrid = (global::Windows.UI.Xaml.Controls.Grid)this.FindName("MainGrid");
+            InputSection = (global::Windows.UI.Xaml.Controls.Grid)this.FindName("InputSection");
+            Radius = (global::Windows.UI.Xaml.Controls.TextBox)this.FindName("Radius");
+            ObwodResult = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("ObwodResult");
+            PoleResult = (global::Windows.UI.Xaml.Controls.TextBlock)this.FindName("PoleResult");
+            FieldButton = (global::Windows.UI.Xaml.Controls.Button)this.FindName("FieldButton");
+            AreaButton = (global::Windows.UI.Xaml.Controls.Button)this.FindName("AreaButton");
         }
     }
 }

@@ -15,11 +15,14 @@
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Figury.KoloPage" />
     <RootType FullName="Figury.KwadratPage" />
@@ -39,6 +42,14 @@
     </RootType>
     <RootType FullName="Figury.MainPage" />
     <RootType FullName="Figury.ProstokatPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="InputScope" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="Figury.TrojkatPage" />
   </Roots.RootTypes>
 </Roots>

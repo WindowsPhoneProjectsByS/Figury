@@ -85,11 +85,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="KoloPageInfo.xaml.cs">
+      <DependentUpon>KoloPageInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="KoloPage.xaml.cs">
       <DependentUpon>KoloPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="KwadratPage.xaml.cs">
       <DependentUpon>KwadratPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KwadratPageInfo.xaml.cs">
+      <DependentUpon>KwadratPageInfo.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -98,8 +104,14 @@
     <Compile Include="ProstokatPage.xaml.cs">
       <DependentUpon>ProstokatPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProstokatPageInfo.xaml.cs">
+      <DependentUpon>ProstokatPageInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TrojkatPage.xaml.cs">
       <DependentUpon>TrojkatPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrojkatPageInfo.xaml.cs">
+      <DependentUpon>TrojkatPageInfo.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -124,11 +136,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="KoloPageInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="KoloPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="KwadratPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KwadratPageInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,7 +160,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ProstokatPageInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TrojkatPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrojkatPageInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -27,10 +27,11 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
     </RootType>
+    <RootType FullName="Figury.BlankPage1" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="InputScope" />
     </RootType>
@@ -42,6 +43,7 @@
     </RootType>
     <RootType FullName="Figury.KoloPage" />
     <RootType FullName="Figury.KwadratPage" />
+    <RootType FullName="Figury.KwadratPageInfo" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
     </RootType>
@@ -52,6 +54,8 @@
     </RootType>
     <RootType FullName="Figury.MainPage" />
     <RootType FullName="Figury.ProstokatPage" />
+    <RootType FullName="Figury.ProstokatPageInfo" />
     <RootType FullName="Figury.TrojkatPage" />
+    <RootType FullName="Figury.TrojkatPageInfo" />
   </Roots.RootTypes>
 </Roots>

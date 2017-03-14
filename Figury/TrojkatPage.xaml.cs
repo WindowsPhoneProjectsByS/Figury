@@ -86,9 +86,9 @@ namespace Figury
                 int height = Int32.Parse(HeightB.Text);
                 int basis = Int32.Parse(Basis.Text);
 
-                int pole = height * basis;
+                double pole = height * basis * 0.5;
 
-                PoleResult.Text = pole.ToString();
+                PoleResult.Text = String.Format("{0:N2}", pole);
             }
             else
             {

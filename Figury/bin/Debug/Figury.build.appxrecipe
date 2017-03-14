@@ -67,11 +67,17 @@
     <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\KoloPageInfo.xbf">
+      <PackagePath>KoloPageInfo.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\KoloPage.xbf">
       <PackagePath>KoloPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\KwadratPage.xbf">
       <PackagePath>KwadratPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\KwadratPageInfo.xbf">
+      <PackagePath>KwadratPageInfo.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
@@ -79,8 +85,14 @@
     <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\ProstokatPage.xbf">
       <PackagePath>ProstokatPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\ProstokatPageInfo.xbf">
+      <PackagePath>ProstokatPageInfo.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\TrojkatPage.xbf">
       <PackagePath>TrojkatPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\TrojkatPageInfo.xbf">
+      <PackagePath>TrojkatPageInfo.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

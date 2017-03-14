@@ -85,12 +85,8 @@ namespace Figury
         {
             bool condition = true;
 
-            if (String.IsNullOrEmpty(Radius.Text) || Radius.Text.Contains("-"))
-            {
-                condition = false;
-            }
-    
-
+            if (String.IsNullOrEmpty(Radius.Text) || Radius.Text.Contains("-")) condition = false;
+           
             return condition;
         }
     }

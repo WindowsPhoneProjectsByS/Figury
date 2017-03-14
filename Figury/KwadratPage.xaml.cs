@@ -81,5 +81,10 @@ namespace Figury
 
             return condition;
         }
+
+        private void InformationButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

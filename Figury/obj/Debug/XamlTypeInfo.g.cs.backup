@@ -124,31 +124,43 @@ namespace Figury.Figury_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[11];
-            _typeNameTable[0] = "Figury.BlankPage1";
+            _typeNameTable = new string[17];
+            _typeNameTable[0] = "Figury.BasicPage1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Figury.KoloPage";
-            _typeNameTable[4] = "Figury.KwadratPage";
-            _typeNameTable[5] = "Figury.KwadratPageInfo";
-            _typeNameTable[6] = "Figury.MainPage";
-            _typeNameTable[7] = "Figury.ProstokatPage";
-            _typeNameTable[8] = "Figury.ProstokatPageInfo";
-            _typeNameTable[9] = "Figury.TrojkatPage";
-            _typeNameTable[10] = "Figury.TrojkatPageInfo";
+            _typeNameTable[3] = "Figury.Common.NavigationHelper";
+            _typeNameTable[4] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[5] = "Figury.Common.ObservableDictionary";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "String";
+            _typeNameTable[8] = "Figury.BlankPage1";
+            _typeNameTable[9] = "Figury.KoloPage";
+            _typeNameTable[10] = "Figury.KwadratPage";
+            _typeNameTable[11] = "Figury.KwadratPageInfo";
+            _typeNameTable[12] = "Figury.MainPage";
+            _typeNameTable[13] = "Figury.ProstokatPage";
+            _typeNameTable[14] = "Figury.ProstokatPageInfo";
+            _typeNameTable[15] = "Figury.TrojkatPage";
+            _typeNameTable[16] = "Figury.TrojkatPageInfo";
 
-            _typeTable = new global::System.Type[11];
-            _typeTable[0] = typeof(global::Figury.BlankPage1);
+            _typeTable = new global::System.Type[17];
+            _typeTable[0] = typeof(global::Figury.BasicPage1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Figury.KoloPage);
-            _typeTable[4] = typeof(global::Figury.KwadratPage);
-            _typeTable[5] = typeof(global::Figury.KwadratPageInfo);
-            _typeTable[6] = typeof(global::Figury.MainPage);
-            _typeTable[7] = typeof(global::Figury.ProstokatPage);
-            _typeTable[8] = typeof(global::Figury.ProstokatPageInfo);
-            _typeTable[9] = typeof(global::Figury.TrojkatPage);
-            _typeTable[10] = typeof(global::Figury.TrojkatPageInfo);
+            _typeTable[3] = typeof(global::Figury.Common.NavigationHelper);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[5] = typeof(global::Figury.Common.ObservableDictionary);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::System.String);
+            _typeTable[8] = typeof(global::Figury.BlankPage1);
+            _typeTable[9] = typeof(global::Figury.KoloPage);
+            _typeTable[10] = typeof(global::Figury.KwadratPage);
+            _typeTable[11] = typeof(global::Figury.KwadratPageInfo);
+            _typeTable[12] = typeof(global::Figury.MainPage);
+            _typeTable[13] = typeof(global::Figury.ProstokatPage);
+            _typeTable[14] = typeof(global::Figury.ProstokatPageInfo);
+            _typeTable[15] = typeof(global::Figury.TrojkatPage);
+            _typeTable[16] = typeof(global::Figury.TrojkatPageInfo);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -183,15 +195,24 @@ namespace Figury.Figury_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_BlankPage1() { return new global::Figury.BlankPage1(); }
-        private object Activate_3_KoloPage() { return new global::Figury.KoloPage(); }
-        private object Activate_4_KwadratPage() { return new global::Figury.KwadratPage(); }
-        private object Activate_5_KwadratPageInfo() { return new global::Figury.KwadratPageInfo(); }
-        private object Activate_6_MainPage() { return new global::Figury.MainPage(); }
-        private object Activate_7_ProstokatPage() { return new global::Figury.ProstokatPage(); }
-        private object Activate_8_ProstokatPageInfo() { return new global::Figury.ProstokatPageInfo(); }
-        private object Activate_9_TrojkatPage() { return new global::Figury.TrojkatPage(); }
-        private object Activate_10_TrojkatPageInfo() { return new global::Figury.TrojkatPageInfo(); }
+        private object Activate_0_BasicPage1() { return new global::Figury.BasicPage1(); }
+        private object Activate_5_ObservableDictionary() { return new global::Figury.Common.ObservableDictionary(); }
+        private object Activate_8_BlankPage1() { return new global::Figury.BlankPage1(); }
+        private object Activate_9_KoloPage() { return new global::Figury.KoloPage(); }
+        private object Activate_10_KwadratPage() { return new global::Figury.KwadratPage(); }
+        private object Activate_11_KwadratPageInfo() { return new global::Figury.KwadratPageInfo(); }
+        private object Activate_12_MainPage() { return new global::Figury.MainPage(); }
+        private object Activate_13_ProstokatPage() { return new global::Figury.ProstokatPage(); }
+        private object Activate_14_ProstokatPageInfo() { return new global::Figury.ProstokatPageInfo(); }
+        private object Activate_15_TrojkatPage() { return new global::Figury.TrojkatPage(); }
+        private object Activate_16_TrojkatPageInfo() { return new global::Figury.TrojkatPageInfo(); }
+        private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
+        {
+            var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
+            var newKey = (global::System.String)key;
+            var newItem = (global::System.Object)item;
+            collection.Add(newKey, newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -203,9 +224,11 @@ namespace Figury.Figury_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Figury.BlankPage1
+            case 0:   //  Figury.BasicPage1
                 userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_BlankPage1;
+                userType.Activator = Activate_0_BasicPage1;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -218,58 +241,92 @@ namespace Figury.Figury_XamlTypeInfo
                 xamlType = new global::Figury.Figury_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Figury.KoloPage
-                userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_KoloPage;
+            case 3:   //  Figury.Common.NavigationHelper
+                userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  Figury.KwadratPage
-                userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_KwadratPage;
+            case 4:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::Figury.Figury_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Figury.Common.ObservableDictionary
+                userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.DictionaryAdd = MapAdd_5_ObservableDictionary;
+                userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Figury.KwadratPageInfo
+            case 6:   //  Object
+                xamlType = new global::Figury.Figury_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  String
+                xamlType = new global::Figury.Figury_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  Figury.BlankPage1
                 userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_KwadratPageInfo;
+                userType.Activator = Activate_8_BlankPage1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  Figury.MainPage
+            case 9:   //  Figury.KoloPage
                 userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainPage;
+                userType.Activator = Activate_9_KoloPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Figury.ProstokatPage
+            case 10:   //  Figury.KwadratPage
                 userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_ProstokatPage;
+                userType.Activator = Activate_10_KwadratPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  Figury.ProstokatPageInfo
+            case 11:   //  Figury.KwadratPageInfo
                 userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_ProstokatPageInfo;
+                userType.Activator = Activate_11_KwadratPageInfo;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Figury.TrojkatPage
+            case 12:   //  Figury.MainPage
                 userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_TrojkatPage;
+                userType.Activator = Activate_12_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Figury.TrojkatPageInfo
+            case 13:   //  Figury.ProstokatPage
                 userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_TrojkatPageInfo;
+                userType.Activator = Activate_13_ProstokatPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  Figury.ProstokatPageInfo
+                userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_14_ProstokatPageInfo;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Figury.TrojkatPage
+                userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_15_TrojkatPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  Figury.TrojkatPageInfo
+                userType = new global::Figury.Figury_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_16_TrojkatPageInfo;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -278,11 +335,37 @@ namespace Figury.Figury_XamlTypeInfo
         }
 
 
+        private object get_0_BasicPage1_NavigationHelper(object instance)
+        {
+            var that = (global::Figury.BasicPage1)instance;
+            return that.NavigationHelper;
+        }
+        private object get_1_BasicPage1_DefaultViewModel(object instance)
+        {
+            var that = (global::Figury.BasicPage1)instance;
+            return that.DefaultViewModel;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::Figury.Figury_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::Figury.Figury_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "Figury.BasicPage1.NavigationHelper":
+                userType = (global::Figury.Figury_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Figury.BasicPage1");
+                xamlMember = new global::Figury.Figury_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Figury.Common.NavigationHelper");
+                xamlMember.Getter = get_0_BasicPage1_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Figury.BasicPage1.DefaultViewModel":
+                userType = (global::Figury.Figury_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Figury.BasicPage1");
+                xamlMember = new global::Figury.Figury_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Figury.Common.ObservableDictionary");
+                xamlMember.Getter = get_1_BasicPage1_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            }
             return xamlMember;
         }
     }

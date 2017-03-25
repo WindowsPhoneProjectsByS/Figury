@@ -70,3 +70,8 @@ D:\Programowanie\VisualProjects\Figury\Figury\obj\Debug\KoloPageInfo.xaml
 D:\Programowanie\VisualProjects\Figury\Figury\obj\Debug\TrojkatPageInfo.xaml
 D:\Programowanie\VisualProjects\Figury\Figury\obj\Debug\KoloPageInfo.xbf
 D:\Programowanie\VisualProjects\Figury\Figury\obj\Debug\TrojkatPageInfo.xbf
+D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\BasicPage1.xbf
+D:\Programowanie\VisualProjects\Figury\Figury\obj\Debug\BasicPage1.g.i.cs
+D:\Programowanie\VisualProjects\Figury\Figury\obj\Debug\BasicPage1.g.cs
+D:\Programowanie\VisualProjects\Figury\Figury\obj\Debug\BasicPage1.xaml
+D:\Programowanie\VisualProjects\Figury\Figury\obj\Debug\BasicPage1.xbf

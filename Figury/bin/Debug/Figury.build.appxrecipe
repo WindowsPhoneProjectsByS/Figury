@@ -67,6 +67,9 @@
     <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\BasicPage1.xbf">
+      <PackagePath>BasicPage1.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Programowanie\VisualProjects\Figury\Figury\bin\Debug\KoloPageInfo.xbf">
       <PackagePath>KoloPageInfo.xbf</PackagePath>
     </AppxPackagedFile>

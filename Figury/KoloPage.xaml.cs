@@ -29,7 +29,7 @@ namespace Figury
         public KoloPage()
         {
             this.InitializeComponent();
-
+            this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         /// <summary>

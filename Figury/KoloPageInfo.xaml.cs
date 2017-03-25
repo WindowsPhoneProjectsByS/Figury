@@ -25,6 +25,7 @@ namespace Figury
         public BlankPage1()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         /// <summary>

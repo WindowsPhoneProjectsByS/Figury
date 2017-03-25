@@ -27,6 +27,7 @@ namespace Figury
         public ProstokatPage()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         /// <summary>

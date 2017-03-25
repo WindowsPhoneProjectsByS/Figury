@@ -26,6 +26,7 @@ namespace Figury
         public TrojkatPageInfo()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         /// <summary>

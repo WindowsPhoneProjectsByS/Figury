@@ -36,7 +36,7 @@ namespace Figury
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
-            this.NavigationCacheMode = NavigationCacheMode.Required;
+           
             HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 

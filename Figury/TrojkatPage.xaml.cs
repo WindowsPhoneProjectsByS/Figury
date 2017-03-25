@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Figury.Common;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,10 +26,16 @@ namespace Figury
     /// </summary>
     public sealed partial class TrojkatPage : Page
     {
+        private NavigationHelper navigationHelper;
+
         public TrojkatPage()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
+
+            navigationHelper = new NavigationHelper(this);
+            this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
+            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
         }
 
         /// <summary>
@@ -38,7 +45,91 @@ namespace Figury
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            
+            this.navigationHelper.OnNavigatedTo(e);
+        }
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            this.navigationHelper.OnNavigatedFrom(e);
+        }
+
+        private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
+        {
+            if (e.PageState != null)
+            {
+                if (e.PageState.ContainsKey("Bok1"))
+                {
+                    e.PageState.Remove("Bok1");
+                }
+                if (e.PageState.ContainsKey("Bok2"))
+                {
+                    e.PageState.Remove("Bok2");
+                }
+                if (e.PageState.ContainsKey("Bok3"))
+                {
+                    e.PageState.Remove("Bok3");
+                }
+                if (e.PageState.ContainsKey("Basis"))
+                {
+                    e.PageState.Remove("Basis");
+                }
+                if (e.PageState.ContainsKey("HeightB"))
+                {
+                    e.PageState.Remove("HeightB");
+                }
+
+                if (e.PageState.ContainsKey("PoleResult"))
+                {
+                    e.PageState.Remove("PoleResult");
+                }
+                if (e.PageState.ContainsKey("ObwodResult"))
+                {
+                    e.PageState.Remove("ObwodResult");
+                }
+
+                e.PageState.Add("Bok1", Bok1.Text);
+                e.PageState.Add("Bok2", Bok2.Text);
+                e.PageState.Add("Bok3", Bok3.Text);
+                e.PageState.Add("Basis", Basis.Text);
+                e.PageState.Add("HeightB", HeightB.Text);
+                e.PageState.Add("PoleResult", PoleResult.Text);
+                e.PageState.Add("ObwodResult", ObwodResult.Text);
+            }
+
+        }
+
+        private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        {
+            if (e.PageState != null)
+            {
+                if (e.PageState.ContainsKey("Bok1"))
+                {
+                    Bok1.Text = e.PageState["Bok1"].ToString();
+                }
+                if (e.PageState.ContainsKey("Bok2"))
+                {
+                    Bok2.Text = e.PageState["Bok2"].ToString();
+                }
+                if (e.PageState.ContainsKey("Bok3"))
+                {
+                    Bok3.Text = e.PageState["Bok3"].ToString();
+                }
+                if (e.PageState.ContainsKey("Basis"))
+                {
+                    Basis.Text = e.PageState["Basis"].ToString();
+                }
+                if (e.PageState.ContainsKey("HeightB"))
+                {
+                    HeightB.Text = e.PageState["HeightB"].ToString();
+                }
+                if (e.PageState.ContainsKey("PoleResult"))
+                {
+                    ObwodResult.Text = e.PageState["PoleResult"].ToString();
+                }
+                if (e.PageState.ContainsKey("ObwodResult"))
+                {
+                    PoleResult.Text = e.PageState["ObwodResult"].ToString();
+                }
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

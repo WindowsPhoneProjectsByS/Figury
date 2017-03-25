@@ -692,3 +692,5 @@ namespace Figury.Figury_XamlTypeInfo
 }
 
 
+
+

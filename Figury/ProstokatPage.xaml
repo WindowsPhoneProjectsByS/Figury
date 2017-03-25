@@ -16,7 +16,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Kwadrat" FontSize="30" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0"
+        <TextBlock Text="Prostokąt" FontSize="30" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Margin="157,0,136,0.667"
                    />
         <Grid x:Name="InputSection" Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>

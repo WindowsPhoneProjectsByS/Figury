@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Figury.Common;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,10 +25,16 @@ namespace Figury
     /// </summary>
     public sealed partial class KwadratPage : Page
     {
+        private NavigationHelper navigationHelper;
+
         public KwadratPage()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
+
+            navigationHelper = new NavigationHelper(this);
+            this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
+            this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
         }
 
         /// <summary>
@@ -35,12 +42,61 @@ namespace Figury
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
+        /// 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            
+            this.navigationHelper.OnNavigatedTo(e);
+        }
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            this.navigationHelper.OnNavigatedFrom(e);
         }
 
-        
+        private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
+        {
+            if (e.PageState != null)
+            {
+                if (e.PageState.ContainsKey("Bok"))
+                {
+                    e.PageState.Remove("Bok");
+                }
+           
+                if (e.PageState.ContainsKey("PoleResult"))
+                {
+                    e.PageState.Remove("PoleResult");
+                }
+                if (e.PageState.ContainsKey("ObwodResult"))
+                {
+                    e.PageState.Remove("ObwodResult");
+                }
+
+                e.PageState.Add("Bok", Bok.Text);
+                e.PageState.Add("PoleResult", PoleResult.Text);
+                e.PageState.Add("ObwodResult", ObwodResult.Text);
+            }
+
+        }
+
+        private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        {
+            if (e.PageState != null)
+            {
+                if (e.PageState.ContainsKey("Bok"))
+                {
+                    Bok.Text = e.PageState["Bok"].ToString();
+                }
+                if (e.PageState.ContainsKey("PoleResult"))
+                {
+                    ObwodResult.Text = e.PageState["PoleResult"].ToString();
+                }
+                if (e.PageState.ContainsKey("ObwodResult"))
+                {
+                    PoleResult.Text = e.PageState["ObwodResult"].ToString();
+                }
+            }
+        }
+
+
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
